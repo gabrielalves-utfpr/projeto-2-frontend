@@ -1,0 +1,241 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#container-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#text-title {
+    font-size: 2em;
+    padding: 10px;
+}
+
+#img-title {
+    width: 76px;
+    height: 76px;
+}
+
+.tabela-coleta {
+    background-color: #37ad3d;
+    border-collapse: collapse;
+    border: 3px solid #1c7a20;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.tabela-coleta th,
+.tabela-coleta td {
+    border: 2px solid #1c7a20;
+    padding: 8px;
+}
+
+.active {
+    background-color: #1c7a20;
+    color: white;
+    border: 3px solid #1c7a20;
+}
+
+#nav-bar {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav-element a,
+.btn {
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-element a:not(.active),
+.btn {
+    border: 3px solid #1c7a20;
+    color: #1c7a20;
+
+}
+
+.nav-element a,
+.nav-element a:hover,
+.active,
+.btn {
+    border-radius: 15px;
+}
+
+.nav-element,
+.btn {
+    margin: 5px;
+    border-radius: 15px;
+    background-color: transparent;
+
+}
+
+.nav-element a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+    border-color: #111;
+}
+
+#cadDicas {
+    display: none;
+}
+
+#listDicas {
+    display: none;
+}
+
+.options {
+    margin: 6px;
+    margin-bottom: 20px;
+}
+
+.option {
+    font-weight: bold;
+    padding: 6px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+
+.plástico-div {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #ff1818;
+    background-color: #ff8282;
+}
+
+.metal-div {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #ffff18;
+    background-color: #fff982;
+}
+
+.papel-div {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #2018ff;
+    background-color: #8284ff;
+}
+
+.vidro-div {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #18ff24;
+    background-color: #82ff88;
+}
+
+.orgânico-div {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #4b3621;
+    background-color: #c3874b;
+}
+
+.btn {
+    border: 3px solid;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #1c7a20;
+    color: white;
+    border: 3px solid #1c7a20;
+    cursor: pointer;
+
+}
+
+#label-dica,
+.options-title {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#label-dica {
+    margin-top: 50px;
+
+}
+
+#fdica {
+    text-align: left;
+    border-radius: 10px;
+    height: 30px;
+    width: 500px;
+    border: 3px solid #1c7a20;
+}
+
+#container-msg {
+    white-space: nowrap;
+    border-radius: 10px;
+    border: 3px solid;
+    display: none;
+    text-align: center;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+
+#text-msg {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#filtro {
+    display: inline-block;
+    white-space: nowrap;
+    border: 3px solid #1c7a20;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+#list-dica {
+    margin-top: 15px;
+}
+
+.item {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 80%;
+    font-weight: 700;
+    justify-content: center;
+    align-content: center;
+}
+
+.item-btn {
+    align-self: flex-end;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+}
+
+.btn-excluir {
+
+    border-color: #ff1818;
+    background-color: #ff8282;
+    color: #ff1818;
+}
+
+.btn-excluir:hover {
+    background-color: #ff1818;
+    color: white;
+    border-color: #ff1818;
+}

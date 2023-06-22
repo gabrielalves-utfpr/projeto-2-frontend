@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coleta de Lixo</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link type="image/png" sizes="96x96" rel="icon"
+            href="assets/icons8-trash-pile-96.png">
+    </head>
+    <body>
+        <div id="container-title">
+            <img id="img-title" src="assets/icons8-trash-pile-96.png"
+                alt="Pilha de Lixo Verde">
+            <h1 id="text-title">Coleta de Lixo Consciente</h1>
+            <img id="img-title" src="assets/icons8-trash-pile-96.png"
+                alt="Pilha de Lixo Verde">
+        </div>
+        <ul id="nav-bar">
+            <li class="nav-element"><a id="pg2" href="#">Cadastro de Dicas</a></li>
+            <li class="nav-element"><a id="pg1" class="active" href="#">Home</a></li>
+            <li class="nav-element"><a id="pg3" href="#">Lista de Dicas</a></li>
+        </ul>
+        <div id="home">
+            <h2>HOME</h2>
+            <button class="btn" id="btn-listar" type="button">Ver horários de
+                coleta</button>
+            <table id="tabela-coleta" class="tabela-coleta">
+                <thead style="display: none;">
+                    <tr>
+                        <th>Bairro</th>
+                        <th>Reciclável</th>
+                        <th>Orgânico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="cadDicas">
+            <div id="container-msg">
+                <h2 id="text-msg"></h2>
+            </div>
+            <form action>
+                <div id="block-dica">
+                    <label id="label-dica" for="fdica">DIGITE SUA DICA:</label>
+                    <input type="text" id="fdica" name="fdica"><br><br>
+                </div>
+                <div class=options>
+                    <label class="options-title" for="fdica">ESCOLHA O TIPO DE
+                        MATERIAL:</label>
+                    <div class="option plástico-div">
+                        <input type="radio" class="plástico" id="cdplástico"
+                            name="cdmaterial" value="plástico">
+                        <label for="plástico">Plástico</label><br>
+                    </div>
+                    <div class="option metal-div">
+                        <input type="radio" class="metal" id="cdmetal"
+                            name="cdmaterial" value="metal">
+                        <label for="metal">Metal</label><br>
+                    </div>
+                    <div class="option papel-div">
+                        <input type="radio" class="papel" id="cdpapel"
+                            name="cdmaterial" value="papel">
+                        <label for="papel">Papel</label><br>
+                    </div>
+                    <div class="option vidro-div">
+                        <input type="radio" class="vidro" id="cdvidro"
+                            name="cdmaterial" value="vidro">
+                        <label for="vidro">Vidro</label><br>
+                    </div>
+                    <div class="option orgânico-div">
+                        <input type="radio" class="orgânico" id="cdorgânico"
+                            name="cdmaterial" value="orgânico">
+                        <label for="orgânico">Orgânico</label><br>
+                    </div>
+                </div>
+                <button class="btn" id="btn-enviar" type="button">Cadastrar</button>
+            </form>
+        </div>
+        <div id="listDicas">
+            <form action id="filtro">
+                <div class="options">
+                    <label class="options-title" for="ffiltro">FILTRO:</label>
+                    <div class="option plástico-div">
+                        <input type="radio" class="plástico" id="flplástico"
+                            name="flmaterial" value="plástico">
+                        <label for="plástico">Plástico</label><br>
+                    </div>
+                    <div class="option metal-div">
+                        <input type="radio" class="metal" id="flmetal"
+                            name="flmaterial" value="metal">
+                        <label for="metal">Metal</label><br>
+                    </div>
+                    <div class="option papel-div">
+                        <input type="radio" class="papel" id="flpapel"
+                            name="flmaterial" value="papel">
+                        <label for="papel">Papel</label><br>
+                    </div>
+                    <div class="option vidro-div">
+                        <input type="radio" class="vidro" id="flvidro"
+                            name="flmaterial" value="vidro">
+                        <label for="vidro">Vidro</label><br>
+                    </div>
+                    <div class="option orgânico-div">
+                        <input type="radio" class="orgânico" id="florgânico"
+                            name="flmaterial" value="orgânico">
+                        <label for="orgânico">Orgânico</label><br>
+                    </div>
+                </div>
+                <button class="btn" id="btn-filtrar" type="button">Filtrar</button>
+                <button class="btn" id="btn-naofiltrar" type="button">Cancelar
+                    Filtro</button>
+            </form>
+            <div id="list-dica">
+                <div class='item vidro-div'>
+                    <div class='item-text'>
+                        <p class='item-tipo'>Tipo: Vidro</p>
+                        <p class='item-dica'>Dica: Você provavelmente já tem
+                            dois coletores: um para os recicláveis e outro para
+                            resíduos orgânicos. No caso do vidro, a dica é
+                            separá-lo de outros materiais para evitar que ele se
+                            quebre durante o trajeto até o descarte do
+                            condomínio ou da rua. Se você tem dúvidas de como
+                            fazer essa separação, confira nossa próxima dica!</p>
+                    </div>
+                    <div class='item-btn'>
+                        <button class='btn btn-excluir' id='btn-ex-1'
+                            type='button'>Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
